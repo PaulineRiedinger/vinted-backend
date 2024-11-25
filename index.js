@@ -24,7 +24,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connexion à la base de données MongoDB
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGODB_URI);
 
 // Importer les routers
 const userRouter = require("./routes/user");
